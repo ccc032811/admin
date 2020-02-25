@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "febs",
+      "type": "com.neefull.fsp.web.common.properties.FebsProperties",
+      "sourceType": "com.neefull.fsp.web.common.properties.FebsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "febs.open-aop-log",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.neefull.fsp.web.common.properties.FebsProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "febs.shiro",
+      "type": "com.neefull.fsp.web.common.properties.ShiroProperties",
+      "sourceType": "com.neefull.fsp.web.common.properties.FebsProperties"
+    }
+  ],
+  "hints": []
+}
