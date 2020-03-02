@@ -78,6 +78,7 @@ public class ServeController extends BaseController {
      * @param serveMenuIds
      * @return
      */
+    @Log("删除服务")
     @GetMapping("/delete/{serveMenuIds}")
     @RequiresPermissions("manage:del")
     public FebsResponse deleteServeMenu(@NotBlank(message = "{required}") @PathVariable String serveMenuIds){
