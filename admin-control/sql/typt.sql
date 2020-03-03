@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 14/06/2019 21:32:15
+ Date: 14/012/2019 21:32:15
 */
 
 SET NAMES utf8mb4;
@@ -20,7 +20,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 
 -- ----------------------------
--- Function structure for findDeptChildren
+-- Function structure for findAdminDeptChildren
 -- ----------------------------
 DROP FUNCTION IF EXISTS `findAdminDeptChildren`;
 delimiter ;;
@@ -44,7 +44,7 @@ END
 delimiter ;
 
 -- ----------------------------
--- Function structure for findMenuChildren
+-- Function structure for findAdminMenuChildren
 -- ----------------------------
 DROP FUNCTION IF EXISTS `findAdminMenuChildren`;
 delimiter ;;
@@ -68,13 +68,3 @@ END
 delimiter ;
 
 
-
-
-
-
-SET FOREIGN_KEY_CHECKS = 1;
-
-SET global sql_mode =
-        'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
-SET session sql_mode =
-        'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
