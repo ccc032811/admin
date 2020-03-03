@@ -115,9 +115,9 @@
                 }
                 if (name === 'delete') {
                     if (!checkStatus.data.length) {
-                        febs.alert.warn('请勾选需要删除的任务');
+                        febs.alert.warn('请勾选需要删除的服务');
                     } else {
-                        febs.modal.confirm('删除服务', '确定删除所选任务？', function () {
+                        febs.modal.confirm('删除服务', '确定删除所选服务？', function () {
                             var menuIds = [];
                             layui.each(checkStatus.data, function (key, item) {
 
@@ -131,11 +131,11 @@
             },
             options: [{
                 name: 'add',
-                title: '新增任务',
+                title: '新增服务',
                 perms: 'manage:add'
             }, {
                 name: 'delete',
-                title: '删除任务',
+                title: '删除服务',
                 perms: 'manage:del'
             }]
         });
@@ -205,7 +205,7 @@
 
         function deleteServeMenus(menuIds) {
             febs.get(ctx + 'serveMenu/delete/' + menuIds, null, function () {
-                febs.alert.success('删除任务成功');
+                febs.alert.success('删除服务成功');
                 $query.click();
             });
         }
