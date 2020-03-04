@@ -37,13 +37,11 @@ public interface IServeService extends IService<ServeMenu> {
      */
     List<ServeMenu> queryServe();
 
-
     /**根据名字查询
      * @param menuName
      * @return
      */
     ServeMenu queryServeByName(String menuName);
-
 
     /**获取所有的服务
      * @return

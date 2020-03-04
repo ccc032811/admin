@@ -77,7 +77,12 @@ public class ServeMenu implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date updateTime;
-
+    /**
+     * 权限
+     */
+    @TableField(exist = false)
+    @NotBlank(message = "{required}")
+    private String perms;
 
     /**
      * 当前页面数据量
@@ -89,12 +94,7 @@ public class ServeMenu implements Serializable {
      */
     @TableField(exist = false)
     private Integer pageNum;
-    /**
-     * 权限
-     */
-    @TableField(exist = false)
-    @NotBlank(message = "{required}")
-    private String perms;
+
 
 
     public Long getId() {
